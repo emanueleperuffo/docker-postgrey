@@ -4,7 +4,6 @@ MAINTAINER Emanuele Peruffo <info@emanueleperuffo.com>
 ENV HOME /root
 ADD . /build
 
-ENV POSTGREY_HOST postgrey.example.com
 ENV POSTGREY_DELAY 300
 ENV POSTGREY_MAX_AGE 35
 ENV POSTGREY_RETRY_WINDOW 2

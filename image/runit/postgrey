@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
 
-exec postgrey --inet=$POSTGREY_HOST:10023 --delay=$POSTGREY_DELAY --max-age=$POSTGREY_MAX_AGE \
+exec postgrey --inet=0.0.0.0:10023 --delay=$POSTGREY_DELAY --max-age=$POSTGREY_MAX_AGE \
 	--retry-window=$POSTGREY_RETRY_WINDOW \
 	--lookup-by-host --auto-whitelist-clients=$POSTGREY_AUTO_WHITELIST_CLIENTS
